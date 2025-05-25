@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Kullanıcı Paneli - Talep Takibi{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-2xl text-blue-700 font-bold mb-4">Kullanıcı Paneli</h2>
+    
+    <div class="mb-4">
+        <h4 class="font-semibold">Puanınız: 150</h4>
+        <button class="btn btn-warning">Puanları Görüntüle</button>
+    </div>
+
+    <div class="mb-4">
+        <h4 class="font-semibold">Başarılar:</h4>
+        <ul>
+            <li>10 Talep Çözüldü</li>
+            <li>5 Yıldızlı Yorum</li>
+        </ul>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-2xl text-blue-700 font-bold mb-4 text-center">Gönderdiğiniz Talepler</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Talep Kartı -->
+      <div class="p-4 bg-white rounded shadow">
+        <h4 class="text-lg font-semibold text-blue-600">Konu: İnternet Sorunu</h4>
+        <p><strong>Durum:</strong> Cevaplandı</p>
+        <p><strong>Yanıt Tarihi:</strong> 20 Nisan 2025</p>
+        <!-- Yorum Geri Bildirim Sistemi -->
+        <p class="mt-3">Bu yanıt yeterli oldu mu?</p>
+        <button class="btn btn-outline-success me-2">Evet</button>
+        <button class="btn btn-outline-danger">Hayır</button>
+      </div>
+      <div class="p-4 bg-white rounded shadow">
+        <h4 class="text-lg font-semibold text-blue-600">Konu: E-posta Girişi</h4>
+        <p><strong>Durum:</strong> Bekliyor</p>
+        <p><strong>Gönderim Tarihi:</strong> 23 Nisan 2025</p>
+        <!-- Yorum Geri Bildirim Sistemi -->
+        <p class="mt-3">Bu yanıt yeterli oldu mu?</p>
+        <button class="btn btn-outline-success me-2">Evet</button>
+        <button class="btn btn-outline-danger">Hayır</button>
+      </div>
+    </div>
+</div>
+{% endblock %}
