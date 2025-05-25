@@ -3,7 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
-import json,io,os
+import json, os , io
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Gelistirme_Anahtari'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///talep.db'
